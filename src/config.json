@@ -41,7 +41,8 @@
   "//": "!!! DO NOT CHANGE ANYTHING BELOW THIS POINT !!!",
   "//": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
   "EXTRA_VERILOG_MODELS": ["dir::sky130_sram_1kbyte_1rw1r_32x256_8.v"],
-
+  "DESIGN_IS_CORE": true,
+	
   "//": "Save some time",
   "RUN_KLAYOUT_XOR": 0,
   "RUN_KLAYOUT_DRC": 0,
