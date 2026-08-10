@@ -72,8 +72,10 @@ sky130_sram_1kbyte_1rw1r_32x256_8 sram0(
     assign datain  = {24'b000000000000000000000000,ui_in};
 
   //output logic
+    assign uo_out = cs_int ? dataout_int[7:0] : dataout_stored[7:0];
     assign uio_oe  = 8'b11111100;
-	assign uo_out = cs_int ? dataout_int[7:0] : dataout_stored[7:0];
+    assign uio_out[1:0] = 2'b00;
+    assign uio_out[7:2] = 6'b000000;
     
   // List all unused inputs to prevent warnings
   wire _unused = &{ena, uio_in[2], uio_in[3], uio_in[4], uio_in[5], uio_in[6], uio_in[7], 1'b0};
