@@ -47,7 +47,7 @@ end
     
 sky130_sram_1kbyte_1rw1r_32x256_8 sram0(
 `ifdef USE_POWER_PINS
-    .vccd1  (VDPWR),
+    .vccd1  (VPWR),
     .vssd1  (VGND),
 `endif		
     .clk0(clk),
