@@ -68,7 +68,7 @@
 
     "FP_PDN_CHECK_NODES": false,
     "FP_PDN_VOFFSET": 26.32,
-    "FP_PDN_CFG": "src/pdn_config.tcl",
+    "FP_PDN_CFG": "src/pdn_cfg.tcl",
     "VDD_NETS": "VPWR",
     "GND_NETS": "VGND",
     "PDN_MACRO_CONNECTIONS": ["sram0 vccd1 vssd1 VPWR VGND"],
