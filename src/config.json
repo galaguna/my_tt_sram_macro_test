@@ -32,7 +32,7 @@
   "CLOCK_PORT": "clk",
 
   "DESIGN_NAME" : "tt_um_galaguna_sram_test",
-  "VERILOG_FILES_BLACKBOX" : ["src/sky130_sram_1kbyte_1rw1r_32x256_8.v"],
+  "EXTRA_VERILOG_MODELS" : ["src/sky130_sram_1kbyte_1rw1r_32x256_8.v"],
 
   "MAGIC_CAPTURE_ERRORS" : true,
   "MAGIC_DRC_USE_GDS" : true,
@@ -61,23 +61,18 @@
     "MAGIC_LEF_WRITE_USE_GDS": false,
     "MAGIC_CAPTURE_ERRORS": false,
     "MAGIC_DRC_USE_GDS": true,
-    "QUIT_ON_MAGIC_DRC": false,
-    "QUIT_ON_KLAYOUT_DRC": false,
+    "ERROR_ON_MAGIC_DRC": false,
+    "ERROR_ON_KLAYOUT_DRC": false,
     "SYNTH_ABC_BUFFERING": true,
     "RUN_HEURISTIC_DIODE_INSERTION": true,
 
-    "FP_PDN_CHECK_NODES": false,
+    "ERROR_ON_PDN_VIOLATIONS": false,
     "FP_PDN_VOFFSET": 26.32,
     "FP_PDN_CFG": "src/pdn_cfg.tcl",
     "VDD_NETS": "VPWR",
     "GND_NETS": "VGND",
     "PDN_MACRO_CONNECTIONS": ["sram0 vccd1 vssd1 VPWR VGND"],
     "VERILOG_POWER_DEFINE": "USE_POWER_PINS",
-
-	"//":"QUIT_ON_MAGIC_DRC",
-    "ERROR_ON_MAGIC_DRC": 0,
-	"//":"QUIT_ON_KLAYOUT_DRC",
-    "ERROR_ON_KLAYOUT_DRC": 0,
 
     "//": "Use alternative efabless decap cells to solve LI density issue",
   "DECAP_CELL": [
