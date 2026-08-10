@@ -8,7 +8,7 @@
 
 module tt_um_galaguna_sram_tst (
 `ifdef USE_POWER_PINS
-    inout             VDPWR,
+    inout             VPWR,
     inout             VGND,
 `endif
     input  wire [7:0] ui_in,    // Dedicated inputs
@@ -25,7 +25,7 @@ module tt_um_galaguna_sram_tst (
 reg [31:0] dataout_stored;
 reg cs_int;
 wire [31:0] dataout_int;
-wire [31:0] dout;
+wire [31:0] dout_dumy;
 wire cs,we;    
 wire [31:0] datain;
 wire [7:0] addr;
@@ -61,7 +61,7 @@ sky130_sram_1kbyte_1rw1r_32x256_8 sram0(
     .clk1(1'b0),
     .csb1(1'b1),
     .addr1(8'b00000000),
-    .dout1()
+    .dout1(dout_dumy)
 );
     
   // interconnection logic:
