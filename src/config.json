@@ -32,7 +32,6 @@
   "CLOCK_PORT": "clk",
 
   "DESIGN_NAME" : "tt_um_galaguna_sram_test",
-  "//": "EXTRA_GDS" : ["src/sky130_sram_1rw_tiny.gds"],
   "VERILOG_FILES_BLACKBOX" : ["src/sky130_sram_1kbyte_1rw1r_32x256_8.v"],
 
   "MAGIC_CAPTURE_ERRORS" : true,
