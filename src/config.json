@@ -71,7 +71,7 @@
     "FP_PDN_CFG": "src/pdn_cfg.tcl",
     "VDD_NETS": "VPWR",
     "GND_NETS": "VGND",
-    "PDN_MACRO_CONNECTIONS": ["sram0 vccd1 vssd1 VPWR VGND"],
+    "PDN_MACRO_CONNECTIONS": ["sram0 VPWR VGND vccd1 vssd1"],
     "VERILOG_POWER_DEFINE": "USE_POWER_PINS",
 
     "//": "Use alternative efabless decap cells to solve LI density issue",
